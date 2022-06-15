@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gridSquare {
+    display: inline-block;
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    margin-right: 4px;
+}
