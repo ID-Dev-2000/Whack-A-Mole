@@ -15,6 +15,7 @@ for (i=1; i <= 3; i++) {
 
 let playButton = document.getElementById('playButton')
 let scoreTracker = document.getElementById('scoreTracker')
+let difficultySlider = document.getElementById('difficultySlider')
 let gamePoints = 0
 
 function pointHandler() {
@@ -26,11 +27,13 @@ function handleColorInGridItem() {
     let randomlySelectedRowValue = Math.floor(Math.random() * 3)
     let randomlySelectedColumnValue = Math.floor(Math.random() * 3)
     let gridItemToBeTemporarilyModified = mainGridBox.children[randomlySelectedRowValue].children[randomlySelectedColumnValue]
+    let gridItemClone = gridItemToBeTemporarilyModified.cloneNode(true)
     gridItemToBeTemporarilyModified.style.backgroundColor = 'lightBlue'
     gridItemToBeTemporarilyModified.addEventListener('click', pointHandler, {once: true})
     setTimeout(function() {
         gridItemToBeTemporarilyModified.style.backgroundColor = 'white'
-    }, 350)
+        gridItemToBeTemporarilyModified.parentNode.replaceChild(gridItemClone, gridItemToBeTemporarilyModified)
+    }, difficultySlider.value)
 }
 
 playButton.addEventListener('click', function() {

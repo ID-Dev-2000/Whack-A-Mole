@@ -12,3 +12,41 @@ main {
     height: 70px;
     margin-right: 4px;
 }
+
+.difficultyOptions {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.difficultySelectParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.difficultySlider {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 20px;
+    background: white;
+    direction: rtl;
+}
+
+.difficultySlider::-webkit-slider-runnable-track {
+    border: 1px solid black;
+}
+
+.difficultySlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}

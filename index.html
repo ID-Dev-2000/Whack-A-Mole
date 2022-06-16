@@ -17,7 +17,13 @@
         <h1>Whack-A-Mole</h1>
         <div id="gridBox">
         </div>
-        <button id="playButton">Play</button>
+        <button id="playButton" style="margin-top: 10px;">Play</button>
+        <div class="difficultySelectParent">
+        <p style="margin-bottom: 4px;">Easy <---> Hard</p>
+        <div class="difficultyOptions">
+                <input type="range" min="50" max="1000" class="difficultySlider" id="difficultySlider">
+        </div>
+        </div>
         <p id="scoreTracker">Score: N/A</p>
     </main>
     <script src="script.js"></script>
