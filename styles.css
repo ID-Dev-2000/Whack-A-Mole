@@ -1,4 +1,4 @@
-main {
+main, .difficultySelectParent, .gridSizeOptions {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,13 +19,6 @@ main {
     align-items: baseline;
 }
 
-.difficultySelectParent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .difficultySlider {
     -webkit-appearance: none;
     width: 250px;
@@ -43,10 +36,6 @@ main {
     appearance: none;
     width: 15px;
     height: 15px;
-    border: 1px solid black;
-    background-color: whitesmoke;
+    background-color: black;
     cursor: pointer;
-    border-radius: 50%;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }

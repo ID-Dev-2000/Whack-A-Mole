@@ -14,17 +14,28 @@
     <a href="https://github.com/ID-Dev-2000/Whack-A-Mole" style="color: white;"><-</a></div>
     
     <main>
-        <h1>Whack-A-Mole</h1>
+        <h1 style="margin-bottom: 0px;">Whack-A-Mole</h1>
+        <p id="scoreTracker" style="margin-top: 5px;">Score: N/A</p>
         <div id="gridBox">
         </div>
         <button id="playButton" style="margin-top: 10px;">Play</button>
         <div class="difficultySelectParent">
         <p style="margin-bottom: 4px;">Easy <---> Hard</p>
         <div class="difficultyOptions">
-                <input type="range" min="50" max="1000" class="difficultySlider" id="difficultySlider">
+                <input type="range" min="150" max="1000" class="difficultySlider" id="difficultySlider">
+        </div>
+        <div class="gridSizeOptions" id="gridSizeOptions" style="margin-top: 10px;">
+            <label for="gridSize" style="margin-bottom: 5px;">Select Grid Size</label>
+            <select name="gridSize" id="gridSizeSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected="selected">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
         </div>
         </div>
-        <p id="scoreTracker">Score: N/A</p>
     </main>
     <script src="script.js"></script>
 </body>
